@@ -1,8 +1,13 @@
-# 🧠 AI Resume Analyzer
+# 🧠 AI Resume Analyzer (ResuMatch)
 
-Welcome to the AI Resume Analyzer!  
-This is a modern, fully frontend resume scoring app powered by **React**, **TypeScript**, **Tailwind CSS**, **Zustand**, **Puter.js**, and **OpenAI API**.  
+Welcome to the AI Resume Analyzer — **ResuMatch**!  
+This is a modern, fully frontend resume scoring app powered by **React**, **TypeScript**, **Tailwind CSS**, **Zustand**, **Puter.js**, and the **OpenAI API**.  
 It gives your resume a score based on a job description and provides **smart, AI-generated suggestions** to help you improve it for applicant tracking systems (ATS).
+
+---
+
+### 🔗 Live Demo  
+👉 [https://your-resume-analyzer.vercel.app](https://your-resume-analyzer.vercel.app)
 
 ---
 
@@ -19,19 +24,16 @@ It gives your resume a score based on a job description and provides **smart, AI
 
 ## 🛠 Tech Stack
 
-| Tool        | Purpose                                |
-|-------------|----------------------------------------|
-| **React 19**       | UI and component logic               |
-| **TypeScript**     | Type safety and better debugging     |
-| **Vite**           | Lightning-fast dev and build tool    |
-| **Tailwind CSS**   | Utility-first responsive styling     |
-| **Zustand**        | Simple and fast global state         |
-| **React Router v7**| Routing and navigation               |
-| **Puter.js SDK**   | Auth, file storage, and AI API access |
-| **pdfjs-dist**     | Display and parse PDF resumes        |
-
----
-
+| Tool              | Purpose                                 |
+|-------------------|------------------------------------------|
+| **React 19**       | UI and component logic                   |
+| **TypeScript**     | Type safety and better debugging         |
+| **Vite**           | Lightning-fast dev and build tool        |
+| **Tailwind CSS**   | Utility-first responsive styling         |
+| **Zustand**        | Simple and fast global state management  |
+| **React Router v7**| Routing and navigation                   |
+| **Puter.js SDK**   | Auth, file storage, and AI API access    |
+| **pdfjs-dist**     | Display and parse PDF resumes            |
 
 ---
 
@@ -40,25 +42,25 @@ It gives your resume a score based on a job description and provides **smart, AI
 ### ✅ Prerequisites:
 - Node.js 20+ and npm installed
 
-### 🧪 1. Clone the repo:
+### 🧪 Steps:
 ```bash
 git clone https://github.com/your-username/ai-resume-analyzer.git
 cd ai-resume-analyzer
 npm install
 npm run dev
-Then open http://localhost:5173 in your browser.
+
 
 📌 How It Works
 
-    Sign in with your Puter account (handled via puter.js)
+    Sign in with your Puter account (via puter.js)
 
-    Upload your resume (PDF only) – the app previews and stores it
+    Upload your resume (PDF only) – preview and store it
 
-    Paste a job description from LinkedIn, Indeed, or any job board
+    Paste a job description from LinkedIn, Indeed, etc.
 
     Click “Analyze” – the app sends both to the AI model
 
-    You’ll get:
+    You’ll receive:
 
         ATS Score (% match)
 
@@ -66,5 +68,4 @@ Then open http://localhost:5173 in your browser.
 
         Clear suggestions to improve
 
-    Option to wipe data and upload new resumes/jobs
-
+    Optionally wipe data and upload new resumes or jobs
