@@ -1,82 +1,70 @@
-# Welcome to React Router!
+# 🧠 AI Resume Analyzer
 
-A modern, production-ready template for building full-stack React applications using React Router.
+Welcome to the AI Resume Analyzer!  
+This is a modern, fully frontend resume scoring app powered by **React**, **TypeScript**, **Tailwind CSS**, **Zustand**, **Puter.js**, and **OpenAI API**.  
+It gives your resume a score based on a job description and provides **smart, AI-generated suggestions** to help you improve it for applicant tracking systems (ATS).
+
+---
+
+## ✨ Features
+
+- 📄 Upload your **PDF resume**
+- 📝 Paste any **job description**
+- ⚡ Instantly get an **ATS-style match score**
+- 💡 AI-generated suggestions: formatting, tone, keywords, missing skills
+- ☁️ Fully serverless — no backend needed (powered by Puter.js SDK)
+- 🎨 Modern UI with responsive design and clean layout
+
+---
+
+## 🛠 Tech Stack
+
+| Tool        | Purpose                                |
+|-------------|----------------------------------------|
+| **React 19**       | UI and component logic               |
+| **TypeScript**     | Type safety and better debugging     |
+| **Vite**           | Lightning-fast dev and build tool    |
+| **Tailwind CSS**   | Utility-first responsive styling     |
+| **Zustand**        | Simple and fast global state         |
+| **React Router v7**| Routing and navigation               |
+| **Puter.js SDK**   | Auth, file storage, and AI API access |
+| **pdfjs-dist**     | Display and parse PDF resumes        |
+
+---
 
 
-## Features
+---
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+## ▶️ How to Run Locally
 
-## Getting Started
+### ✅ Prerequisites:
+- Node.js 20+ and npm installed
 
-### Installation
-
-Install the dependencies:
-
+### 🧪 1. Clone the repo:
 ```bash
+git clone https://github.com/your-username/ai-resume-analyzer.git
+cd ai-resume-analyzer
 npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
 npm run dev
-```
+Then open http://localhost:5173 in your browser.
 
-Your application will be available at `http://localhost:5173`.
+📌 How It Works
 
-## Building for Production
+    Sign in with your Puter account (handled via puter.js)
 
-Create a production build:
+    Upload your resume (PDF only) – the app previews and stores it
 
-```bash
-npm run build
-```
+    Paste a job description from LinkedIn, Indeed, or any job board
 
-## Deployment
+    Click “Analyze” – the app sends both to the AI model
 
-### Docker Deployment
+    You’ll get:
 
-To build and run using Docker:
+        ATS Score (% match)
 
-```bash
-docker build -t my-app .
+        Strengths and weaknesses
 
-# Run the container
-docker run -p 3000:3000 my-app
-```
+        Clear suggestions to improve
 
-The containerized application can be deployed to any platform that supports Docker, including:
+    Option to wipe data and upload new resumes/jobs
 
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
